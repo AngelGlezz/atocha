@@ -1,0 +1,647 @@
+@font-face
+{
+   font-family: "Futura Book";
+   src: url(../fonts/Futura-LT/FuturaLT-Book.ttf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "Futura Light";
+   src: url(../fonts/Futura-LT/FuturaLT-Light.ttf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "Futura Bold";
+   src: url(../fonts/Futura-LT/FuturaLT-Bold.ttf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "Futura Heavy";
+   src: url(../fonts/Futura-LT/FuturaLT-Heavy.ttf) format("opentype");
+}
+
+.navbar {
+    background-color: #1B5791!important;
+    height: 74px!important;
+    z-index: 9999!important;
+}
+
+.container-fluid {
+    background-color: #1B5791!important;
+}
+
+.navbar-collapse {
+    position: relative;
+}
+
+.navbar-nav {
+    width: 50%!important;
+    min-width: 410px;
+    position: absolute;
+    right: 0px;
+    margin: auto;
+}
+
+.nav-item {
+    width: 25%!important;
+}
+
+.nav-link {
+    color: #cd9932!important;
+    font-size: 16px!important;
+    font-weight: 500!important;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: "Futura Book";
+}
+
+.nav-link:hover {
+    color: #fff;
+    border-bottom: 1px solid #CC9933;
+}
+
+.topbar-active {
+    color: #fff;
+    border-bottom: 1px solid #CC9933;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../images/menu.svg) !important;
+}
+
+#cover {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/cover.png);
+    background-color: #1B5791;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#cover-info {
+    width: 440px;
+    height: 440px;
+    background-image: url(../images/logo-cover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+#presentacion {
+    width: 100%;
+    height: 90vh;
+}
+
+.presentacion-container {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    float: left;
+}
+
+.presentacion-txt {
+    width: 500px;
+    height: 550px;
+    font-family: 'Futura Light';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: justify;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.bold {
+    font-family: "Futura Heavy";
+}
+
+.final-line {
+    color: #cd9932;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Futura Heavy";
+}
+
+.presentacion-diferente {
+    background-color: #F8F7F4;
+}
+
+.presentacion-inner-img {
+    width: 490px;
+    height: 655px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.cover-inter {
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clientes {
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.clientes-container {
+    width: 1100px;
+    height: 650px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.gold-title {
+    font-family: 'Futura Book';
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #cd9932;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+}
+
+.carousel-img {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.carousel-txt-container {
+    width: 50%;
+    height: 100%;
+    background-color: #F8F7F4;
+    float: left;
+    padding: 50px 30px;
+}
+
+.carousel-item-title {
+    font-family: 'Futura Heavy';
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.carousel-item-description {
+    font-family: 'Futura Light';
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #CC9933!important;
+    font-size: 40px!important;
+    font-weight: 900!important;
+}
+
+.slick-prev:before {
+    content: '<'!important;
+}
+
+.slick-next:before {
+    content: '>'!important;
+}
+
+.slick-list, .slick-track {
+    height: 100%!important;
+}
+
+.slick-dots {
+    bottom: -40px!important;
+}
+
+.slick-dots li button:before {
+    font-size: 50px!important;
+    color: #CC9933!important;
+}
+
+#filosofia-upper-section {
+    width: 100%;
+    height: 90vh;
+}
+
+.page-title {
+    font-size: 48px;
+    color: #CC9933;
+    font-family: 'Futura Book';
+    letter-spacing: 5px;
+    line-height: 65px;
+    margin-bottom: 50px;
+}
+
+.filosofia-item-title {
+    font-family: 'Futura Book';
+    font-size: 24px;
+    width: 130px;
+    height: 50px;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #CC9933;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.section-mid-text {
+    width: 100%;
+    padding: 100px 0px;
+    overflow: auto;
+}
+
+.container-mid-text {
+    width: 64%;
+    margin: auto;
+    min-width: 750px;
+}
+
+.container-mid-text .filosofia-item-title {
+    margin: auto;
+}
+
+.txt-mid-text {
+    font-family: 'Futura Light';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#lower-filosofia-section {
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.lower-section-container {
+    width: 83%;
+    min-width: 700px;
+    margin: auto;
+}
+
+.values-txt {
+    font-family: 'Futura Light';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.values-txt ul li span {
+    font-family: 'Futura Book';
+}
+
+.values-txt ul li {
+    list-style-type: circle;
+}
+
+#filosofia-last {
+    width: 100%;
+    background-color: #F8F7F4;
+    padding: 100px 0px;
+}
+
+.last-img {
+    width: 70%;
+    height: 400px;
+    min-width: 750px;
+    background-image: url(../images/hands.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+}
+
+.mail-bold {
+    font-family: 'Futura Heavy';
+}
+
+.gold-txt {
+    text-transform: uppercase;
+    color: #CC9933;
+    font-family: 'Futura Heavy';
+    letter-spacing: 5px;
+}
+
+#contacto-section {
+    width: 100%;
+    padding: 80px 0px;
+    position: relative;
+}
+
+.contacto-container {
+    width: 65%;
+    margin: auto;
+    min-width: 750px;
+}
+
+.contacto-txt {
+    font-family: 'Futura Light';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    width: 100%;
+}
+
+.contacto-container .page-title {
+    text-align: center;
+}
+
+#form-section {
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #F8F7F4;
+}
+
+.title-form {
+    font-family: 'Futura Heavy';
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gold-line {
+    width: 155px;
+    height: 1px;
+    border: 1px solid #CC9933;
+    margin: 8px auto 50px;
+}
+
+.container-form {
+    width: 70%;
+    min-width: 750px;
+    margin: auto;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+.container-input {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    width: 50%;
+    height: 60px;
+    float: left;
+    position: relative;
+}
+
+.input-container input {
+    width: 90%;
+    font-size: 16px;
+    font-family: 'Futura Book';
+    border: 2px solid #CC9933;
+    padding: 8px;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.textarea-container {
+    width: 95%;
+    height: 300px;
+    margin: auto;
+}
+
+.textarea-container textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Futura Book';
+    padding: 2px 8px;
+    border: 2px solid #CC9933;
+    border-radius: 4px;
+}
+
+.btn-content {
+    width: 240px;
+    height: 60px;
+    margin: 20px auto;
+}
+
+.btn-content input {
+    width: 100%;
+    height: 100%;
+    background-color: #CC9933;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Futura Book';
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.btn-content input:hover {
+    background-color: #fff;
+    color: #CC9933;
+    border: 3px solid #CC9933;
+}
+
+#team-section {
+    width: 100%;
+    height: 85vh;
+    padding: 30px 0px;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: #1B5791;
+    font-family: 'Futura Book';
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #CC9933;
+    line-height: 80px;
+}
+
+@media screen and (max-width: 1100px) {
+    .presentacion-txt {
+        width: 85%;
+        height: 750px;
+    }
+
+    .presentacion-inner-img {
+        width: 90%;
+    }
+
+    .clientes-container {
+        width: 90%;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #cover-info{
+        width: 90%;
+        background-size: contain;
+    }
+
+    .container-topbar-brand {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        min-width: 100%;
+    }
+
+    .navbar-toggler {
+        border: none!important;
+        --bs-navbar-color: transparent!important;
+    }
+
+    .navbar-collapse {
+        height: 200px;
+    }
+
+    .nav-item, .nav-link {
+        width: 100%!important;
+    }
+
+    .nav-link {
+        color: #CC9933!important;
+    }
+
+    #presentacion {
+        height: auto;
+        padding: 30px 0px;
+    }
+
+    .presentacion-diferente {
+        display: none;
+    }
+
+    .presentacion-container {
+        width: 100%;
+        float: none;
+    }
+
+    .presentacion-txt {
+        position: initial;
+        height: auto;
+    }
+
+    .cover-inter {
+        height: 380px;
+    }
+
+    #clientes {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .clientes-container {
+        position: initial;
+        height: auto;
+        width: 80%;
+    }
+
+    .carousel-img {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+    }
+
+    .carousel-txt-container {
+        width: 100%;
+    }
+
+    #filosofia-upper-section {
+        height: auto;
+        padding: 30px 0px;
+    }
+
+    #filosofia-last {
+        padding: 10px 0px;
+    }
+
+    .last-img {
+        width: 90%;
+        height: 250px;
+        min-width: 300px;
+    }
+
+    .container-mid-text, .lower-section-container, .contacto-container, .container-form {
+        width: 90%;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .input-container {
+        width: 90%;
+        min-width: 300px;
+        position: initial;
+        float: none;
+        margin: 10px auto;
+    }
+
+    .textarea-container {
+        width: 100%;
+        height: 150px;
+        min-width: 300px;
+    }
+
+    #contacto-section {
+        padding: 30px 0px;
+    }
+
+    .contacto-txt, .presentacion-txt, .txt-mid-text, .values-txt {
+        font-size: 19px;
+        line-height: 23px;
+    }
+}  
