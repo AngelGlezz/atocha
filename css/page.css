@@ -273,6 +273,7 @@
     letter-spacing: 5px;
     line-height: 65px;
     margin-bottom: 50px;
+    text-transform: uppercase;
 }
 
 .filosofia-item-title {
@@ -494,6 +495,85 @@
     padding: 30px 0px;
 }
 
+#section-us {
+    overflow: auto;
+    padding: 80px 0px;
+}
+
+#section-us .page-title {
+    text-align: center;
+}
+
+#section-us .contacto-txt {
+    width: 65%;
+    min-width: 750px;
+    text-align: center;
+    margin: auto;
+}
+
+#section-service .page-title {
+    width: 85%;
+    min-width: 750px;
+    margin: 0px auto 40px;
+}
+
+.accordion-header {
+    width: 87%;
+    margin: auto;
+    min-width: 750px;
+}
+
+.accordion-item {
+    border: none!important;
+    --bs-accordion-btn-padding-x: -0.1rem!important;
+    padding: 10px 0px;
+}
+
+.accordion-button:focus {
+    box-shadow: none!important;
+}
+
+.accordion-body-mid {
+    height: 800px;
+}
+
+.accordion {
+    --bs-accordion-active-bg: transparent!important;
+}
+
+.accordion-body {
+    width: 87%;
+    min-width: 750px;
+    margin: auto;
+    font-family: 'Futura Light';
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#easy-section {
+    width: 100%;
+    overflow: auto;
+    padding: 80px 0px;
+    background-color: #F8F7F4;
+}
+
+#easy-section .filosofia-item-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+#easy-section .txt-mid-text {
+    width: 66%;
+    min-width: 750px;
+    margin: auto;
+}
+
+#easy-section .txt-mid-text span {
+    font-family: 'Futura Book';
+}
+
 .footer {
     width: 100%;
     height: 80px;
@@ -581,7 +661,7 @@
 
     #clientes {
         height: auto;
-        padding-bottom: 50px;
+        padding: 50px 0px;
     }
 
     .clientes-container {
@@ -592,12 +672,17 @@
 
     .carousel-img {
         width: 100%;
-        height: 200px;
+        height: 400px;
         background-size: cover;
+    }
+
+    .carousel-item-description {
+        display: none;
     }
 
     .carousel-txt-container {
         width: 100%;
+        height: auto;
     }
 
     #filosofia-upper-section {
@@ -615,9 +700,21 @@
         min-width: 300px;
     }
 
-    .container-mid-text, .lower-section-container, .contacto-container, .container-form {
+    .container-mid-text, .lower-section-container, .contacto-container, .container-form, 
+    .accordion-header, #section-us .contacto-txt, #section-service .page-title, .accordion-body,
+    #easy-section .txt-mid-text {
         width: 90%;
         min-width: 300px;
+    }
+
+    .accordion-body-mid {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #easy-section .filosofia-item-title {
+        height: 90px;
     }
 }
 
@@ -640,7 +737,7 @@
         padding: 30px 0px;
     }
 
-    .contacto-txt, .presentacion-txt, .txt-mid-text, .values-txt {
+    .contacto-txt, .presentacion-txt, .txt-mid-text, .values-txt, .accordion-body, #easy-section .txt-mid-text  {
         font-size: 19px;
         line-height: 23px;
     }
