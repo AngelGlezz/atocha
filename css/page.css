@@ -64,12 +64,16 @@
 }
 
 .topbar-active {
-    color: #fff;
-    border-bottom: 1px solid #CC9933;
+    color: #fff!important;
+    border-bottom: 1px solid #CC9933!important;
 }
 
 .navbar-toggler-icon {
     background-image: url(../images/menu.svg) !important;
+}
+
+.navbar-brand {
+    margin: 10px 0px 0px 10px;
 }
 
 #cover {
@@ -89,7 +93,7 @@
     background-image: url(../images/logo-cover.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 99%;
     overflow: auto;
     position: absolute;
     top: 0px;
@@ -169,6 +173,7 @@
 #clientes {
     width: 100%;
     height: 70vh;
+    min-height: 670px;
     background-color: #fff;
     position: relative;
 }
@@ -196,7 +201,7 @@
 }
 
 .carousel {
-    width: 1000px;
+    width: 100%;
     height: 500px;
     margin: auto;
 }
@@ -259,6 +264,10 @@
 .slick-dots li button:before {
     font-size: 50px!important;
     color: #CC9933!important;
+}
+
+.slick-dots li {
+    margin: 0px 20px;
 }
 
 #filosofia-upper-section {
@@ -335,7 +344,12 @@
 }
 
 .values-txt ul li {
-    list-style-type: circle;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.values-txt ul li::marker {
+    color: #CC9933!important;
 }
 
 #filosofia-last {
@@ -440,7 +454,7 @@
     width: 90%;
     font-size: 16px;
     font-family: 'Futura Book';
-    border: 2px solid #CC9933;
+    border: 1px solid #CC9933;
     padding: 8px;
     border-radius: 4px;
     position: absolute;
@@ -461,7 +475,7 @@
     font-size: 16px;
     font-family: 'Futura Book';
     padding: 2px 8px;
-    border: 2px solid #CC9933;
+    border: 1px solid #CC9933;
     border-radius: 4px;
 }
 
@@ -487,6 +501,15 @@
     background-color: #fff;
     color: #CC9933;
     border: 3px solid #CC9933;
+}
+
+.success-msg {
+    width: 100%;
+    font-family: 'Futura Book';
+    font-size: 20px;
+    color: #CC9933;
+    text-align: center;
+    display: none;
 }
 
 #team-section {
@@ -515,6 +538,7 @@
     width: 85%;
     min-width: 750px;
     margin: 0px auto 40px;
+    font-size: 36px;
 }
 
 .accordion-header {
@@ -548,6 +572,15 @@
     font-family: 'Futura Light';
     font-size: 24px;
     line-height: 32px;
+}
+
+.accordion-body ul li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.accordion-body ul li::marker {
+    color: #CC9933!important;
 }
 
 #easy-section {
